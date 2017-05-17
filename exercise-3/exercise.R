@@ -76,4 +76,5 @@ ggplot(data = election) + geom_polygon(aes(x = long, y =lat, group = group)) + c
 # Specify a `manual` fill scale to make Democratic counties "blue" and Republican counties "red"
 ggplot(election) + geom_polygon(aes(x = long, y = lat, group = group, fill = party)) + scale_fill_manual(values = c('blue', 'red')) + coord_quickmap()
 
+
 # For fun: how else can you fill in this map? What other insights can you produce?
